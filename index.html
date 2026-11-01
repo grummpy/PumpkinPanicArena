@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pumpkin Panic Arena</title>
+  <link rel="icon" href="assets/icon.jpg">
+  <meta name="description" content="Four pumpkin knights smash candy crates. Last one with candy wins.">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #140810;
+      color: #fff4dd;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    }
+    body {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    canvas {
+      width: min(100vw, calc(100vh * 16 / 9));
+      height: min(100vh, calc(100vw * 9 / 16));
+      background: #140810;
+      display: block;
+      outline: none;
+    }
+    noscript {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="1280" height="720" tabindex="0"></canvas>
+  <noscript>Pumpkin Panic Arena needs JavaScript.</noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
