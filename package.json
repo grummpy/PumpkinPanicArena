@@ -1,0 +1,12 @@
+{
+  "name": "pumpkin-panic-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Four pumpkin knights smash candy crates. Last one with candy wins.",
+  "scripts": {
+    "start": "python3 server.py",
+    "test": "node --test tests/"
+  },
+  "license": "MIT"
+}
